@@ -1,0 +1,68 @@
+[debug] [2023-05-22T10:16:21.419Z] ----------------------------------------------------------------------
+[debug] [2023-05-22T10:16:21.424Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-22T10:16:21.425Z] CLI Version:   12.0.0
+[debug] [2023-05-22T10:16:21.426Z] Platform:      win32
+[debug] [2023-05-22T10:16:21.427Z] Node Version:  v18.16.0
+[debug] [2023-05-22T10:16:21.429Z] Time:          Mon May 22 2023 13:16:21 GMT+0300 (Israel Daylight Time)
+[debug] [2023-05-22T10:16:21.429Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-22T10:16:21.436Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-05-22T10:16:21.509Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-22T10:16:21.510Z] > authorizing via signed-in user (red1562001@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Hp\OneDrive - ort braude college of engineering\Desktop\לימודים\שנה ג\סמסטר ב\new web
+
+[debug] [2023-05-22T10:16:22.284Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-05-22T10:16:22.286Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-22T10:18:17.906Z] > refreshing access token with scopes: []
+[debug] [2023-05-22T10:18:17.908Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-22T10:18:17.908Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-22T10:18:18.699Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-22T10:18:18.699Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-22T10:18:18.726Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-22T10:18:18.726Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"server","name":"server"}
+[debug] [2023-05-22T10:18:20.439Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-05-22T10:18:20.440Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-05-22T10:18:21.019Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID server. Please try again with a unique project ID.
+[debug] [2023-05-22T10:18:34.213Z] ----------------------------------------------------------------------
+[debug] [2023-05-22T10:18:34.217Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-22T10:18:34.218Z] CLI Version:   12.0.0
+[debug] [2023-05-22T10:18:34.219Z] Platform:      win32
+[debug] [2023-05-22T10:18:34.219Z] Node Version:  v18.16.0
+[debug] [2023-05-22T10:18:34.221Z] Time:          Mon May 22 2023 13:18:34 GMT+0300 (Israel Daylight Time)
+[debug] [2023-05-22T10:18:34.221Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-22T10:18:34.237Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-22T10:18:34.238Z] > authorizing via signed-in user (red1562001@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Hp\OneDrive - ort braude college of engineering\Desktop\לימודים\שנה ג\סמסטר ב\new web
+
